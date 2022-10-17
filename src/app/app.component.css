@@ -1,0 +1,88 @@
+.app {
+    overflow: hidden;
+}
+
+.app__container {
+    background-color: #f5f5f5;
+}
+
+.sort-bar {
+    background-color: #ededed;
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    padding: 14px 22px;
+    border-radius: 2px;
+    color: var(--text-color);
+}
+
+.sort-bar__label {
+    font-size: 1.4rem;
+    margin-right: 12px;
+}
+
+.sort-bar__btn {
+    margin-right: 12px;
+    min-width: 90px;
+}
+
+.sort-bar__control {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.sort-bar__control-state {
+    margin-right: 22px;
+}
+
+.sort-bar__control-page-current {
+    color: var(--primary-color);
+}
+
+.sort-bar__control-btn {
+    display: flex;
+}
+
+.sort-bar__control-btn-link {
+    display: flex;
+    height: 34px;
+    width: 36px;
+    text-decoration: none;
+    background-color: var(--white-color);
+}
+
+.sort-bar__control-btn-link:first-child {
+    margin-right: 1px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.sort-bar__control-btn-link:last-child {
+    margin-right: 1px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.sort-bar__control-btn-link:hover {
+    opacity: 0.9;
+}
+
+.sort-bar__control-btn-link--disable {
+    background-color: #f9f9f9;
+    cursor: default;
+}
+
+.sort-bar__control-btn-link--disable:hover {
+    opacity: 1;
+}
+
+.sort-bar__control-btn-link--disable .sort-bar__control-icon {
+    color: #ccc;
+}
+
+.sort-bar__control-icon {
+    margin: auto;
+    color: var(--text-color);
+}
