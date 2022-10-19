@@ -1,0 +1,131 @@
+.footer {
+    border-top: 4px solid var(--primary-color);
+    background-color: #fbfbfb;
+}
+
+.footer-margin {
+    padding: 50px 0 30px;
+}
+
+.footer__heading {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #0000008A;
+    margin-bottom: 20px;
+}
+
+.footer-list {
+    list-style-type: none;
+}
+
+.footer-item:hover .footer-item__link {
+    color: var(--primary-color);
+}
+
+.footer-item__link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #0000008A;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.footer__withdraw-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__withdraw-item {
+    margin-left: 4px;
+}
+
+.footer__withdraw-icon {
+    font-size: 5.5rem;
+    position: relative;
+    top: -4px;
+}
+
+.footer-item__social-icon {
+    font-size: 1.6rem;
+    margin-right: 6px;
+    position: relative;
+    top: 2px;
+}
+
+.footer-list-social .footer-item:first-child:hover i {
+    color: #4867aa;
+}
+
+.footer-list-social .footer-item:nth-child(2):hover i {
+    color: #edc102;
+}
+
+.footer-list-social .footer-item:last-child:hover i {
+    color: #007ab9;
+}
+
+.footer__download {
+    display: flex;
+}
+
+.footer__download-qr-link img {
+    width: 86px;
+    height: 86px;
+    border: 1px solid #e4e4e4;
+    margin-right: 15px;
+}
+
+.footer__download-apps {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer__download-apps img {
+    height: 20px;
+}
+
+.extra-info {
+    border-top: 1px solid #e1e1e1;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding: 40px 0;
+    color: #737373;
+}
+
+.copyrights-icon {
+    font-size: 1.1rem;
+    position: relative;
+    top: -1px;
+}
+
+.regions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.regions__item {
+    display: inline-block;
+    position: relative;
+    margin-left: 6px;
+}
+
+.regions__item--separate::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    right: -6px;
+    border-right: 1px solid #c9c9c9;
+    height: 16px;
+}
+
+.regions__item a {
+    display: block;
+    text-decoration: none;
+    color: #737373;
+}

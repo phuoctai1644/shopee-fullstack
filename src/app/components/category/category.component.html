@@ -1,10 +1,11 @@
 <nav class="category">
     <div class="category__heading">TẤT CẢ DANH MỤC</div>
-    <ul class="category__list">
-        <li
-            *ngFor="let tempCategory of categories"
-            class="category__item category__item--active">
-            <a routerLink="/category/{{tempCategory}}" class="category__item-link">{{tempCategory}}</a>
-        </li>
-    </ul>
+
+    <div class="category__list">
+        <a *ngFor="let category of categories"
+            class="category__item"
+            routerLink="/category/{{category}}"
+            routerLinkActive="category__item--active"
+        >{{category}}</a>
+    </div>
 </nav>

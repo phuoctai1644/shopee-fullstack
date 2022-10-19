@@ -9,6 +9,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductService } from './services/product.service';
+import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [
   {path: 'category/:name', component: ProductListComponent},
@@ -22,7 +23,8 @@ const routes: Routes = [
     AppComponent,
     HeaderComponent,
     CategoryComponent,
-    ProductListComponent
+    ProductListComponent,
+    FooterComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
