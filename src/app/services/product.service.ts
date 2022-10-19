@@ -7,20 +7,23 @@ import { map, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
-  products: Product[] = []
-  
-  private baseUrl: string = 'http://localhost:8080/api/products'
+  private productUrl: string = 'https://fakestoreapi.com/products'
+  private categoryUrl: string = 'https://fakestoreapi.com/products/categories'
+
   constructor(private httpClient: HttpClient) {}
 
-  getProductList(): Observable<Product[]> {
-    return this.httpClient.get<GetReponseProduct>(this.baseUrl).pipe(
-      map(res => res._embedded.products)
-    )
+  getProductList(categoryName: string): Observable<Product[]> {
+    const searchUrl = `${this.productUrl}/category/${categoryName}`
+
+    return this.getProducts(searchUrl)
+  }
+
+  getProducts(searchUrl: string): Observable<Product[]> {
+    return this.httpClient.get<Product[]>(searchUrl)
+  } 
+
+  getCategoryList(): Observable<string[]> {
+    return this.httpClient.get<string[]>(this.categoryUrl)
   }
 }
 
-interface GetReponseProduct {
-  _embedded: {
-    products: Product[]
-  }
-}

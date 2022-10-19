@@ -1,29 +1,10 @@
 <nav class="category">
     <div class="category__heading">TẤT CẢ DANH MỤC</div>
     <ul class="category__list">
-        <li class="category__item category__item--active">
-            <a href="#" class="category__item-link">Sản phẩm</a>
-        </li>
-        <li class="category__item">
-            <a href="#" class="category__item-link">Sản phẩm bán chạy</a>
-        </li>
-        <li class="category__item">
-            <a href="#" class="category__item-link">Sản phẩm mới</a>
-        </li>
-        <li class="category__item">
-            <a href="#" class="category__item-link">iPhone</a>
-        </li>
-        <li class="category__item">
-            <a href="#" class="category__item-link">iPad</a>
-        </li>
-        <li class="category__item">
-            <a href="#" class="category__item-link">Apple Watch</a>
-        </li>
-        <li class="category__item">
-            <a href="#" class="category__item-link">MacBook</a>
-        </li>
-        <li class="category__item">
-            <a href="#" class="category__item-link">Phụ kiện Apple</a>
+        <li
+            *ngFor="let tempCategory of categories"
+            class="category__item category__item--active">
+            <a routerLink="/category/{{tempCategory}}" class="category__item-link">{{tempCategory}}</a>
         </li>
     </ul>
 </nav>
